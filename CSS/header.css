@@ -1,0 +1,17 @@
+header {
+  width: 1400px;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  margin: 26px;
+  text-decoration: none;
+  color: #292929;
+  font-size: 20px;
+  font-family: arial;
+}

@@ -1,0 +1,42 @@
+.text {
+  margin-left: auto;
+  top: 330px;
+  position:  relative;
+  width: 587px;
+  height: 207px;
+  right: 200px;
+  font-family: arial;
+  font-size: 20px;
+}
+
+.men {
+  width: 990px;
+  height: 990px;
+  right: 900px;
+  top: -34px;
+  position: absolute;
+}
+
+.backtext {
+  font-size: 160px;
+  font-family: arial;
+  letter-spacing: 8px;
+  color:#CFCFCD;
+  padding-left: 18%;
+  font-weight: 900;
+  line-height: 160px;
+  top: 240px;
+  position: absolute;
+  left: 120px;
+}
+.read {
+  text-decoration: none;
+  color: #292929;
+  width: 169px;
+  height: 23px;
+  font-family: arial;
+  right: 618px;
+  position: absolute;
+  top:650px;
+  font-size: 20px;
+}
