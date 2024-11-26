@@ -1,4 +1,4 @@
-.text {
+.main-container__text {
   margin-left: auto;
   top: 330px;
   position:  relative;
@@ -9,7 +9,7 @@
   font-size: 20px;
 }
 
-.men {
+.main-container__men {
   width: 990px;
   height: 990px;
   right: 900px;
@@ -17,7 +17,7 @@
   position: absolute;
 }
 
-.backtext {
+.main-container__back-text {
   font-size: 160px;
   font-family: arial;
   letter-spacing: 8px;
@@ -29,7 +29,7 @@
   position: absolute;
   left: 120px;
 }
-.read {
+.main-container__read {
   text-decoration: none;
   color: #292929;
   width: 169px;
