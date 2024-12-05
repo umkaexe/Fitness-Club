@@ -1,14 +1,17 @@
-.container__header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
+  padding-bottom: 10px;
 }
-.container__nav {
+
+.header__nav {
   display: flex;
-  gap: 32px;
+  gap: 64px;
 }
-a {
+
+.header__link {
   text-decoration: none;
   color: #292929;
   font-size: 20px;
