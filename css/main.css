@@ -35,8 +35,7 @@
   font-weight: 900;
   line-height: 160px;
   position: relative;
-  display: flex;
-  justify-content: center;
+  padding-left: 10%;
 }
 
 .main__link {
