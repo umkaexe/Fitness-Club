@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-family: 'Roboto';
+
+
+  &__nav {
+    display: flex;
+    gap: 64px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #292929;
+    font-size: 20px;
+    font-weight: 200;
+  }
+}

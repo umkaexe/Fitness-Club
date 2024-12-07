@@ -1,4 +1,134 @@
-@import url(./reset.css);
-@import url(./base.css);
-@import url(./header.css);
-@import url(./main.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../FONTS/Arial-Black.eot");
+  src: url("../FONTS/Arial-Black.eot?#iefix") format("embedded-opentype"), url("../FONTS/Arial-Black.woff") format("woff"), url("../FONTS/Arial-Black.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../FONTS/Roboto-Medium.eot");
+  src: url("../FONTS/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../FONTS/Roboto-Medium.woff") format("woff"), url("../FONTS/Roboto-Medium.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../FONTS/Roboto-Bold.eot");
+  src: url("../FONTS/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../FONTS/Roboto-Bold.woff") format("woff"), url("../FONTS/Roboto-Bold.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-family: "Roboto";
+}
+.header__nav {
+  display: flex;
+  gap: 64px;
+}
+.header__link {
+  text-decoration: none;
+  color: #292929;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.main {
+  padding: 120px;
+  font-family: "Roboto";
+}
+.main__men {
+  position: absolute;
+  z-index: 1;
+  left: -290px;
+  top: -260px;
+}
+.main__text {
+  position: relative;
+  font-size: 20px;
+  max-width: 587px;
+  color: #292929;
+  font-weight: 100;
+  margin-left: auto;
+  top: -85px;
+  padding-bottom: 107px;
+  z-index: 2;
+}
+.main__title {
+  font-family: "Arial";
+  font-size: clamp(100px, 10vw, 160px);
+  letter-spacing: 8px;
+  color: #CFCFCD;
+  font-weight: 100;
+  position: relative;
+  padding-left: 10%;
+}
+.main__link {
+  padding: 11px 32px;
+  display: block;
+}
+
+.main-container {
+  height: 100%;
+  position: relative;
+}/*# sourceMappingURL=style.css.map */
