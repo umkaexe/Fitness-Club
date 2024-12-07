@@ -17,5 +17,12 @@
     color: #292929;
     font-size: 20px;
     font-weight: 200;
+    transition: 0.5s;
+
+    &:hover {
+      color: #FF8340;
+      cursor: pointer;
+      transform: scale(1.2);
+    }
   }
 }

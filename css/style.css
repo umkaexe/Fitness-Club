@@ -91,6 +91,12 @@ table {
   color: #292929;
   font-size: 20px;
   font-weight: 200;
+  transition: 0.5s;
+}
+.header__link:hover {
+  color: #FF8340;
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .main {
@@ -108,7 +114,7 @@ table {
   font-size: 20px;
   max-width: 587px;
   color: #292929;
-  font-weight: 100;
+  font-weight: 300;
   margin-left: auto;
   top: -85px;
   padding-bottom: 107px;
@@ -126,6 +132,13 @@ table {
 .main__link {
   padding: 11px 32px;
   display: block;
+  transition: 0.5s;
+}
+.main__link:hover {
+  color: #FF8340;
+  cursor: pointer;
+  transform: scale(1.2);
+  padding: 11px 60px;
 }
 
 .main-container {

@@ -15,7 +15,7 @@
     font-size: 20px;
     max-width: 587px;
     color: #292929;
-    font-weight: 100;
+    font-weight: 300;
     margin-left: auto;
     top: -85px;
     padding-bottom: 107px;
@@ -36,6 +36,14 @@
   &__link {
     padding: 11px 32px;
     display: block;
+    transition: 0.5s;
+
+    &:hover {
+      color: #FF8340;
+      cursor: pointer;
+      transform: scale(1.2);
+      padding: 11px 60px;
+    }
   }
 }
 
@@ -43,6 +51,3 @@
   height: 100%;
   position: relative;
 }
-
-//*line-height: 160px; font-size: 20px; *//
- 
