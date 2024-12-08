@@ -53,6 +53,13 @@ table {
   margin: 0 auto;
 }
 
+.main-women__container {
+  min-height: 973px;
+  max-width: 1710px;
+  margin: 0 auto;
+  border: 3px solid black;
+}
+
 @font-face {
   font-family: "Arial";
   src: url("../FONTS/Arial-Black.eot");
@@ -99,17 +106,18 @@ table {
   transform: scale(1.2);
 }
 
-.main {
+.main-men {
   padding: 120px;
   font-family: "Roboto";
+  background-color: #EDEDEB;
 }
-.main__men {
+.main-men__img {
   position: absolute;
   z-index: 1;
   left: -290px;
   top: -260px;
 }
-.main__text {
+.main-men__text {
   position: relative;
   font-size: 20px;
   max-width: 587px;
@@ -120,7 +128,7 @@ table {
   padding-bottom: 107px;
   z-index: 2;
 }
-.main__title {
+.main-men__title {
   font-family: "Arial";
   font-size: clamp(100px, 10vw, 160px);
   letter-spacing: 8px;
@@ -129,12 +137,12 @@ table {
   position: relative;
   padding-left: 10%;
 }
-.main__link {
+.main-men__link {
   padding: 11px 32px;
   display: block;
   transition: 0.5s;
 }
-.main__link:hover {
+.main-men__link:hover {
   color: #FF8340;
   cursor: pointer;
   transform: scale(1.2);
@@ -144,4 +152,46 @@ table {
 .main-container {
   height: 100%;
   position: relative;
+}
+
+.main-women {
+  font-family: "Roboto";
+}
+.main-women__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.main-women__title {
+  position: relative;
+  font-family: "Arial";
+  font-weight: 100;
+  color: #292929;
+  font-size: clamp(80px, 4vw, 60px);
+  line-height: 90px;
+  padding-top: 169px;
+  padding-left: 155px;
+  z-index: 5;
+}
+.main-women__text {
+  position: absolute;
+  top: 407px;
+  left: 361px;
+  padding-bottom: 105px;
+  padding-left: 26px;
+  padding-right: 26px;
+  font-weight: 300;
+  max-width: 510px;
+  z-index: 4;
+  letter-spacing: 10%;
+  font-size: 20px;
+  line-height: 24px;
+  border: 6px solid #FF8340;
+}
+.main-women__link {
+  text-decoration: none;
+  color: #292929;
+  display: block;
+  padding-top: 25px;
+  padding-left: 32px;
 }/*# sourceMappingURL=style.css.map */
