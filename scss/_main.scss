@@ -2,7 +2,6 @@
 .main-men {
   padding: 120px;
   font-family: 'Roboto';
-  background-color: #EDEDEB;
 
   &__img {
     position: absolute;
@@ -21,7 +20,6 @@
     top: -85px;
     padding-bottom: 107px;
     z-index: 2;
-  
   }
 
   &__title {
@@ -51,51 +49,4 @@
 .main-container {
   height: 100%;
   position: relative;
-}
-
-
-.main-women {
-  font-family: 'Roboto';
-
-  &__img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-
-  &__title {
-    position: relative;
-    font-family: 'Arial';
-    font-weight: 100;
-    color: #292929;
-    font-size: clamp(80px, 4vw, 60px);
-    line-height: 90px;
-    padding-top: 169px;
-    padding-left: 155px;
-    z-index: 5;
-  }
-
-  &__text {
-    position: absolute;
-    top: 407px;
-    left: 361px;
-    padding-bottom: 105px;
-    padding-left: 26px;
-    padding-right: 26px;
-    font-weight: 300;
-    max-width: 510px;
-    z-index: 4;
-    letter-spacing: 10%;
-    font-size: 20px;
-    line-height: 24px;
-    border: 6px solid #FF8340;
-  }
-
-  &__link {
-    text-decoration: none;
-    color: #292929;
-    display: block;
-    padding-top: 25px;
-    padding-left: 32px;
-  }
 }
