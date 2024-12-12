@@ -6,10 +6,23 @@
   padding-bottom: 10px;
   font-family: 'Roboto';
 
+  @media screen and (max-width: 1400px){
+    padding: 16px 32px 0 32px;
+  }
 
   &__nav {
     display: flex;
     gap: 64px;
+
+    @media screen and (max-width: 952px) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    @media screen and (max-width: 952px){
+      width: 117px;
+    }
   }
 
   &__link {
@@ -18,11 +31,51 @@
     font-size: 20px;
     font-weight: 200;
     transition: 0.5s;
+    position: relative;
+    z-index: 5;
 
     &:hover {
       color: #FF8340;
       cursor: pointer;
       transform: scale(1.2);
+    }
+  }
+
+  &__burger {
+    display: none;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #292929;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    @media screen and (max-width: 952px) {
+      display: block;
+    }
+
+    &-line {
+      width: 22px;
+      height: 3px;
+      background-color: #292929;
+      position: relative;
+      top: 50%;
+      margin: 0 auto;
+
+      &::after, &::before {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 3px;
+        background-color: #292929;
+      }
+
+      &::after {
+        top: 9px;
+      }
+
+      &::before {
+        top: -9px;
+      }
     }
   }
 }

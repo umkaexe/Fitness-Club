@@ -1,0 +1,33 @@
+.motiv {
+  background-color: #292929;
+  color: white;
+  font-family: 'Arial';
+  @media screen and (max-width: 952px) {
+    padding: 32px;
+  }
+  &__wrapper {
+    position: relative;
+    height: 100%;
+    padding-top: 124px;
+    padding-bottom: 81px;
+  }
+
+  &__title {
+    font-size: clamp(60px, 5vw, 80px);
+    font-weight: 300;
+    line-height: 160px;
+    letter-spacing: 5%;
+  }
+
+  &__text {
+    font-family: 'Roboto';
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 10%;
+    line-height: 24px;
+
+    @media screen and (max-width: 952px) {
+      max-width: 888px;
+    }
+  }
+}

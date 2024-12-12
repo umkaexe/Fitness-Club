@@ -1,0 +1,75 @@
+.women {
+  font-family: 'Roboto';
+
+  @media screen and (max-width:952px) {
+    padding-left: 32px;
+  }
+
+  &__wrapper {
+    height: 100%;
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 231px;
+  }
+
+  &__title {
+    font-family: 'Arial';
+    font-size: clamp(60px, 5vw, 80px);
+    font-weight: 100;
+    line-height: 90px;
+    color: #292929;
+    position: absolute;
+    left: 0;
+    bottom: 624px;
+  }
+
+  &__border {
+    position: relative;
+    max-width: 562px;
+    max-height: 670px;
+    border: 6px solid #FF8340;
+    z-index: 2;
+    margin-left: 200px;
+
+    @media screen and (max-width: 952px) {
+      max-width: 504px;
+      max-height: 647px;
+      left: -117px;
+      top: -50px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: 602px;
+    top: 338px;
+
+    @media screen and (max-width: 952px) {
+      max-width: 598px;
+      max-height: 374px;
+      top: 444px;
+      left: 357px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 300;
+    color: #292929;
+    padding: 335px 26px 59px 26px;
+  }
+
+  &__link {
+    text-decoration: none;
+    display: block;
+    padding: 25px 0 0 32px;
+    transition: 0.5s;
+
+    &:hover {
+      color: #FF8340;
+      cursor: pointer;
+      transform: scale(1.2);
+      padding-left: 55px;
+    }
+  }
+}
