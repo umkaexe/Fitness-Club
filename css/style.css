@@ -247,6 +247,12 @@ table {
   padding-top: 72px;
   padding-bottom: 231px;
 }
+@media screen and (max-width: 952px) {
+  .women__wrapper {
+    padding-bottom: 143px;
+    padding-top: 27px;
+  }
+}
 .women__title {
   font-family: "Arial";
   font-size: clamp(60px, 5vw, 80px);
@@ -256,6 +262,11 @@ table {
   position: absolute;
   left: 0;
   bottom: 624px;
+}
+@media screen and (max-width: 952px) {
+  .women__title {
+    bottom: 542px;
+  }
 }
 .women__border {
   position: relative;
@@ -276,7 +287,7 @@ table {
 .women__img {
   position: absolute;
   left: 602px;
-  top: 338px;
+  top: 335px;
 }
 @media screen and (max-width: 952px) {
   .women__img {
@@ -312,7 +323,8 @@ table {
 }
 @media screen and (max-width: 952px) {
   .motiv {
-    padding: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 .motiv__wrapper {
@@ -321,11 +333,23 @@ table {
   padding-top: 124px;
   padding-bottom: 81px;
 }
+@media screen and (max-width: 952px) {
+  .motiv__wrapper {
+    padding-top: 53px;
+    padding-bottom: 53px;
+  }
+}
 .motiv__title {
   font-size: clamp(60px, 5vw, 80px);
   font-weight: 300;
   line-height: 160px;
   letter-spacing: 5%;
+  margin-bottom: 34px;
+}
+@media screen and (max-width: 952px) {
+  .motiv__title {
+    margin-bottom: 28px;
+  }
 }
 .motiv__text {
   font-family: "Roboto";
@@ -337,5 +361,166 @@ table {
 @media screen and (max-width: 952px) {
   .motiv__text {
     max-width: 888px;
+  }
+}
+
+.feedback {
+  background-color: #FF8340;
+  font-family: "Roboto";
+}
+@media screen and (max-width: 952px) {
+  .feedback {
+    padding: 32px;
+  }
+}
+.feedback__wrapper {
+  position: relative;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 176px;
+}
+.feedback__title {
+  font-family: "Arial";
+  font-weight: 100;
+  font-size: clamp(32px, 3vw, 45px);
+  text-align: center;
+  padding-bottom: 35px;
+  color: #292929;
+  line-height: 160px;
+}
+@media screen and (max-width: 952px) {
+  .feedback__title {
+    line-height: 45px;
+  }
+}
+.feedback__line {
+  border: 6px solid #292929;
+  max-width: 64px;
+  margin: auto;
+}
+.feedback__text {
+  font-weight: 200;
+  text-align: left;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 10%;
+  padding-top: 50px;
+  color: #292929;
+  padding-bottom: 40px;
+}
+
+.choice__category {
+  background-color: #292929;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 200;
+  color: white;
+  padding: 18px 420px 18px 35px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 952px) {
+  .choice__category {
+    padding: 18px 185px 18px 24px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+.choice__name {
+  background-color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 200;
+  padding: 18px 420px 18px 35px;
+}
+.choice__name::-moz-placeholder {
+  color: #B0B0B0;
+}
+.choice__name::placeholder {
+  color: #B0B0B0;
+}
+@media screen and (max-width: 952px) {
+  .choice__name {
+    padding: 18px 161px 18px 24px;
+  }
+}
+.choice__number {
+  background-color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 200;
+  padding: 18px 396px 18px 35px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+.choice__number::-moz-placeholder {
+  color: #B0B0B0;
+}
+.choice__number::placeholder {
+  color: #B0B0B0;
+}
+@media screen and (max-width: 952px) {
+  .choice__number {
+    padding: 18px 161px 18px 24px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+.choice__email {
+  background-color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 200;
+  padding: 18px 420px 18px 35px;
+}
+.choice__email::-moz-placeholder {
+  color: #B0B0B0;
+}
+.choice__email::placeholder {
+  color: #B0B0B0;
+}
+@media screen and (max-width: 952px) {
+  .choice__email {
+    padding: 18px 161px 18px 24px;
+  }
+}
+.choice__messange {
+  background-color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 200;
+  padding: 18px 1130px 157px 35px;
+}
+.choice__messange::-moz-placeholder {
+  color: #B0B0B0;
+}
+.choice__messange::placeholder {
+  color: #B0B0B0;
+}
+@media screen and (max-width: 952px) {
+  .choice__messange {
+    padding: 18px 593px 157px 34px;
+  }
+}
+.choice__button {
+  font-family: "Roboto";
+  font-weight: 200;
+  font-size: 20px;
+  padding: 11px 0 11px 0;
+  background-color: #FF8340;
+  border: 0px;
+  color: #292929;
+  cursor: pointer;
+  float: right;
+  padding-top: 54px;
+  transition: 0.5s;
+}
+.choice__button:hover {
+  color: #FFFFFF;
+  font-size: 23px;
+}
+@media screen and (max-width: 952px) {
+  .choice__button {
+    padding-top: 41px;
   }
 }/*# sourceMappingURL=style.css.map */

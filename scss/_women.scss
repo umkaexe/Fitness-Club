@@ -10,6 +10,11 @@
     position: relative;
     padding-top: 72px;
     padding-bottom: 231px;
+
+    @media screen and (max-width: 952px){
+      padding-bottom: 143px;
+      padding-top: 27px;
+    }      
   }
 
   &__title {
@@ -21,6 +26,9 @@
     position: absolute;
     left: 0;
     bottom: 624px;
+    @media screen and (max-width: 952px){
+      bottom: 542px;
+    }
   }
 
   &__border {
@@ -42,7 +50,7 @@
   &__img {
     position: absolute;
     left: 602px;
-    top: 338px;
+    top: 335px;
 
     @media screen and (max-width: 952px) {
       max-width: 598px;
