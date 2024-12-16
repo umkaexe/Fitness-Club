@@ -2,22 +2,15 @@
   background-color: #292929;
   color: white;
   font-family: 'Arial';
+  padding: 124px 32px 81px 32px;
 
   @media screen and (max-width: 952px) {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 53px 32px;
   }
 
   &__wrapper {
     position: relative;
     height: 100%;
-    padding-top: 124px;
-    padding-bottom: 81px;
-
-    @media screen and (max-width: 952px) {
-      padding-top: 53px;
-      padding-bottom: 53px;
-    }
   }
 
   &__title {

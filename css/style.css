@@ -262,10 +262,12 @@ table {
   position: absolute;
   left: 0;
   bottom: 624px;
+  z-index: 3;
 }
 @media screen and (max-width: 952px) {
   .women__title {
     bottom: 542px;
+    line-height: 70px;
   }
 }
 .women__border {
@@ -287,21 +289,21 @@ table {
 .women__img {
   position: absolute;
   left: 602px;
-  top: 335px;
+  bottom: 0;
 }
 @media screen and (max-width: 952px) {
   .women__img {
     max-width: 598px;
     max-height: 374px;
-    top: 444px;
     left: 357px;
+    bottom: 0;
   }
 }
 .women__text {
   font-size: 20px;
   font-weight: 300;
   color: #292929;
-  padding: 335px 26px 59px 26px;
+  padding: 335px 26px 46px 25px;
 }
 .women__link {
   text-decoration: none;
@@ -320,24 +322,16 @@ table {
   background-color: #292929;
   color: white;
   font-family: "Arial";
+  padding: 124px 32px 81px 32px;
 }
 @media screen and (max-width: 952px) {
   .motiv {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 53px 32px;
   }
 }
 .motiv__wrapper {
   position: relative;
   height: 100%;
-  padding-top: 124px;
-  padding-bottom: 81px;
-}
-@media screen and (max-width: 952px) {
-  .motiv__wrapper {
-    padding-top: 53px;
-    padding-bottom: 53px;
-  }
 }
 .motiv__title {
   font-size: clamp(60px, 5vw, 80px);
@@ -431,7 +425,7 @@ table {
   font-size: 20px;
   font-family: "Roboto";
   font-weight: 200;
-  padding: 18px 420px 18px 35px;
+  width: 48%;
 }
 .choice__name::-moz-placeholder {
   color: #B0B0B0;
