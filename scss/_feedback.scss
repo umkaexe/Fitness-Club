@@ -1,0 +1,123 @@
+.feedback {
+  background-color: #FF8340;
+  padding: 40px 32px 165px 32px;
+
+  @media screen and (max-width: 952px){
+    padding: 32px 32px 21px 32px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+    font-size: clamp(32px, 5vw, 45px);
+    color: #292929;
+    font-family: 'Arial';
+    font-weight: 100;
+    text-align: center;
+
+    @media screen and (max-width: 952px){
+      margin-bottom: 38px;
+    }
+  }
+
+  &__line {
+    width: 64px;
+    height: 6px;
+    background-color: #292929;
+    margin: 0 auto 50px auto;
+
+    @media screen and (max-width: 952px) {
+      margin: 0 auto 48px auto;
+    }
+  }
+
+  &__text {
+    font-family: 'Roboto';
+    font-weight: 200;
+    color: #292929;
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 24px;
+
+    @media screen and (max-width: 952px){
+      margin: 30px;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+
+  @media screen and (max-width: 952px){
+    gap: 20px;
+  }
+
+  
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+
+    @media screen and (max-width: 952px){
+      gap: 20px;
+    }
+  }
+
+  &__input {
+    box-sizing: border-box;
+    width: 49%;
+    padding: 18px 34px;
+    border: 2px solid #CFCFCD;
+    color: #B0B0B0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Roboto';
+    font-weight: 200;
+  }
+
+  &__select {
+    width: 49%;
+    padding: 18px 34px;
+    background-color: #292929;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+
+  &__textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 18px 0 157px 34px;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 200;
+    letter-spacing: 2px;
+    border: 2px solid #B0B0B0;
+    resize: none;
+    &::placeholder {
+      text-align: top;
+    }
+  }
+
+  &__button {
+    font-family: 'Roboto';
+    font-weight: 200;
+    font-size: 20px;
+    color: #292929;
+    margin-left: auto;
+    padding: 11px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: transparent;
+    border: none;
+    &:hover {
+      color: white;
+      font-size: 25px;
+    }
+  }
+}
