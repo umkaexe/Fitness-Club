@@ -53,6 +53,11 @@ table {
   margin: 0 auto;
 }
 
+.container-system {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: "Arial";
   src: url("../FONTS/Arial-Black.eot");
@@ -102,6 +107,7 @@ table {
   }
 }
 .header__link {
+  font-family: "Roboto";
   text-decoration: none;
   color: #292929;
   font-size: 20px;
@@ -480,4 +486,100 @@ table {
 .form__button:hover {
   color: white;
   font-size: 25px;
+}
+
+.system {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas: "main main main img img img" "itemCarrot itemStopwatch itemWeight img img img";
+}
+@media screen and (max-width: 952px) {
+  .system {
+    grid-template-columns: 476px 476px;
+    grid-template-rows: 489px 434px 388px;
+    grid-template-areas: "main img" "itemCarrot itemStopwatch" "itemWeight itemWeight";
+  }
+}
+.system__main {
+  grid-area: main;
+  max-width: 624px;
+  margin-left: auto;
+  padding-right: 76px;
+}
+@media screen and (max-width: 952px) {
+  .system__main {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+.system__main-title {
+  font-family: "Arial";
+  font-weight: 100;
+  font-size: clamp(60px, 5vw, 80px);
+  letter-spacing: 5%;
+  color: #292929;
+  padding-top: 124px;
+  padding-bottom: 32px;
+}
+@media screen and (max-width: 952px) {
+  .system__main-title {
+    padding-top: 40px;
+    padding-bottom: 38px;
+    padding-left: 62px;
+  }
+}
+.system__main-text {
+  font-family: "Roboto";
+  font-weight: 200;
+  font-size: 20px;
+  letter-spacing: 10%;
+  line-height: 24px;
+  color: #292929;
+}
+.system__item {
+  padding: 38px 44px 18px 24px;
+  text-align: center;
+}
+.system__item:nth-child(2) {
+  grid-area: itemCarrot;
+}
+.system__item:nth-child(3) {
+  grid-area: itemStopwatch;
+}
+.system__item:nth-child(4) {
+  grid-area: itemWeight;
+}
+.system__item-img {
+  margin-bottom: 70px;
+}
+.system__item-title {
+  margin-bottom: 52px;
+  font-family: "Arial";
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 5%;
+}
+.system__item-text {
+  font-family: "Roboto";
+  font-weight: 200;
+  font-size: 20px;
+}
+.system__rod {
+  grid-area: img;
+  background: url("../images/rod.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 57px;
+}
+
+.date {
+  padding-top: 55px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

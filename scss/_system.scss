@@ -1,0 +1,88 @@
+.system {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas: "main main main img img img"
+                       "itemCarrot itemStopwatch itemWeight img img img";
+  @media screen and (max-width: 952px){
+    grid-template-columns: 476px 476px;
+    grid-template-rows: 489px 434px 388px;
+    grid-template-areas: "main img"
+                         "itemCarrot itemStopwatch"
+                         "itemWeight itemWeight";
+
+  }
+  &__main {
+    grid-area: main;
+    max-width: 624px;
+    margin-left: auto;
+    padding-right: 76px;
+    @media screen and (max-width: 952px){
+      padding-right: 32px;
+      padding-left: 32px;
+    }
+
+    &-title {
+      font-family: 'Arial';
+      font-weight: 100;
+      font-size: clamp(60px, 5vw, 80px);
+      letter-spacing: 5%;
+      color: #292929;
+      padding-top: 124px;
+      padding-bottom: 32px;
+      @media screen and (max-width: 952px){
+        padding-top: 40px;
+        padding-bottom: 38px;
+        padding-left: 62px;
+      }
+    }
+
+    &-text {
+      font-family: 'Roboto';
+      font-weight: 200;
+      font-size: 20px;
+      letter-spacing: 10%;
+      line-height: 24px;
+      color: #292929;
+    }
+  }
+
+  &__item {
+    padding: 38px 44px 18px 24px;
+    text-align: center;
+
+    &:nth-child(2) {
+      grid-area: itemCarrot;
+    }
+    &:nth-child(3) {
+      grid-area: itemStopwatch;
+    }
+    &:nth-child(4) {
+      grid-area: itemWeight;
+    }
+    
+    &-img {
+      margin-bottom: 70px;
+    }
+
+    &-title {
+      margin-bottom: 52px;
+      font-family: 'Arial';
+      font-weight: 100;
+      font-size: 20px;
+      letter-spacing: 5%;
+    }
+    &-text {
+      font-family: 'Roboto';
+      font-weight: 200;
+      font-size: 20px;
+    }
+  }
+  &__rod {
+    grid-area: img;
+    background: url('../images/rod.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+}
