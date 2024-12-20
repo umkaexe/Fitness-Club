@@ -17,9 +17,11 @@
     max-width: 624px;
     margin-left: auto;
     padding-right: 76px;
+    padding-top: 124px;
     @media screen and (max-width: 952px){
       padding-right: 32px;
       padding-left: 32px;
+      padding-top: 40px;
     }
 
     &-title {
@@ -28,12 +30,10 @@
       font-size: clamp(60px, 5vw, 80px);
       letter-spacing: 5%;
       color: #292929;
-      padding-top: 124px;
-      padding-bottom: 32px;
+      margin-bottom: 32px;
       @media screen and (max-width: 952px){
-        padding-top: 40px;
-        padding-bottom: 38px;
-        padding-left: 62px;
+        margin-bottom: 38px;
+        margin-left: 62px;
       }
     }
 
